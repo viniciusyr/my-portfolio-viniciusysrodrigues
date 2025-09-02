@@ -1,9 +1,10 @@
 import Image from "next/image";
 
+
 export default function Hero(){
     return (
         
-        <section className="pt-50 flex flex-col items-center justify-between max-w-6xl mx-auto px-6 py-20 gap-12">
+        <section className="pt-50 flex flex-col items-center justify-between max-w-6xl mx-auto px-6 py-2 gap-10">
             <div className="flex-1 flex justify-center">
                 <div className="relative w-40 h-40 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg border-4 border-sky-600">
                 <Image
@@ -23,10 +24,10 @@ export default function Hero(){
                 </span>
             </h3>
             <span className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight text-center">
-                I'm <span className="text-sky-600">Vinícius Rodrigues</span> 
+                I'm <span className="text-sky-600">Vinícius </span> Rodrigues,
             </span>
             <p className="mt-6 text-2xl md:text-xl text-gray-600 max-w-2xl mx-auto md:mx-0">
-            A brazilian <span className="font-semibold">Software Engineer</span> who loves to transform ideas into digital solutions.
+            A brazilian <span className="font-semibold">Software Engineer</span>, who loves to transform ideas into digital solutions.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center">
