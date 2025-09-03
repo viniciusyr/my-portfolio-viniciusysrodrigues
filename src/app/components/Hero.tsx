@@ -17,7 +17,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl md:text-5xl font-light leading-[1.4] text-gray-900 dark:text-gray-100 relative"
+        className="text-4xl md:text-5xl font-light mb-4 leading-[1.4] text-gray-900 dark:text-gray-100 relative"
       >
         From imagination to pixels, from passion to{" "}
         <span className="italic font-medium font-serif relative">bytes</span> —
@@ -38,7 +38,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-lg md:text-xl font-light leading-[1.4] text-gray-900 dark:text-gray-100 relative py-5"
+        className="text-lg md:text-xl font-light leading-6 text-gray-900 dark:text-gray-100 relative py-5"
       >
         As a Full Stack Developer, I specialize in building scalable and
         maintainable applications using technologies like{" "}
