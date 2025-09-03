@@ -1,8 +1,9 @@
+"use client";
 import { motion } from "framer-motion";
 
 export default function SocialMediaButtons() {
   return (
-    <motion.div className="flex justify-center space-x-4">
+    <motion.div className="flex justify-start space-x-4">
         {/* Email */}
       <motion.a
         href="mailto:viniciusysrodrigues@gmail.com"
@@ -10,7 +11,6 @@ export default function SocialMediaButtons() {
         whileHover={{ scale: 1.1, rotate: 15 }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.1 }}
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
@@ -18,13 +18,13 @@ export default function SocialMediaButtons() {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
           className="size-6"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
           />
         </svg>
@@ -36,7 +36,6 @@ export default function SocialMediaButtons() {
         whileHover={{ scale: 1.1, rotate: 15 }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.1 }}
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
@@ -59,7 +58,6 @@ export default function SocialMediaButtons() {
         whileHover={{ scale: 1.1, rotate: 15 }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.1 }}
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
