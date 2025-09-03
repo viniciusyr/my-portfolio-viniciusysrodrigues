@@ -38,7 +38,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-lg font-light leading-6 text-gray-900 dark:text-gray-100 relative py-5 text-justify mb-4"
+        className="text-md font-light leading-6 text-gray-700 dark:text-gray-100 relative py-5 text-justify mb-4"
       >
         As a Full Stack Developer, I specialize in building scalable and
         maintainable applications using technologies like{" "}
