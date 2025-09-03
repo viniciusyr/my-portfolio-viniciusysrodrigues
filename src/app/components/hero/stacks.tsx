@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 export default function Stacks() {
   return (
-    <div className="pt-30 text-gray-500 text-left flex flex-col">
-      <span>current tech stack/tools:</span>
+    <div className=" pt-15 text-gray-500 text-left flex flex-col">
+      <span>Tech stack/tools:</span>
       <ul className="list-image-none flex flex-row gap-3.5 ml-4">
         <li className="group relative inline-block">
           <svg
@@ -147,7 +145,7 @@ export default function Stacks() {
             TailwindCSS
           </span>
         </li>
-        <li className="h-3 mt-2 w-[1px] bg-slate-300"></li>
+        <li className="h-3 mt-2 w-[1px] bg-slate-300 dark:bg-slate-500"></li>
         <li className="group relative inline-block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -245,6 +243,38 @@ export default function Stacks() {
           </svg>
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Redis
+          </span>
+        </li>
+        <li className="group relative inline-block">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="25"
+            height="25"
+            viewBox="0 0 48 48"
+            className="grayscale hover:grayscale-0 dark:invert-0 transition-all duration-300 mt-0.5"
+          >
+            <path
+              fill="#e64a19"
+              d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"
+            ></path>
+            <path
+              fill="#7c4dff"
+              d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"
+            ></path>
+            <path
+              fill="#66bb6a"
+              d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"
+            ></path>
+            <path
+              fill="#ff7043"
+              d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"
+            ></path>
+            <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+          </svg>
+          <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
+            Figma
           </span>
         </li>
       </ul>
