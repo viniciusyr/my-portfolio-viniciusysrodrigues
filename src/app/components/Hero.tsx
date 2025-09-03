@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { RoughNotation } from "react-rough-notation";
 import AnimatedSpan from "./AnimatedSpan";
 import SocialMediaButtons from "./SocialMediaButtons";
-import SpecialButton from "../button/SpecialButton";
-import Stacks from "@/app/components/hero/stacks";
+import SpecialButton from "./SpecialButton";
+import Stacks from "@/app/components/Stacks";
 
 export default function Hero() {
   return (
