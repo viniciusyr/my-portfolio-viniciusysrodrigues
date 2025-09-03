@@ -1,19 +1,3 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-@layer base {
-  body {
-    @apply font-sans;
-  }
-}
-
-@layer base {
-  :root {
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-}
-
-@layer utilities {
-  .font-sans {
-    font-family: var(--font-sans);
-  }
-}

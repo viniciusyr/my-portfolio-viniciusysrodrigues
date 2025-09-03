@@ -1,50 +1,49 @@
-import Image from "next/image";
+'use client';
 
+import { motion } from 'framer-motion';
+import { RoughNotation } from "react-rough-notation";
+import AnimatedSpan from './AnimatedSpan';
+import SocialMediaButtons from './SocialMediaButtons';
 
-export default function Hero(){
-    return (
-        
-        <section className="pt-50 flex flex-col items-center justify-between max-w-6xl mx-auto px-6 py-2 gap-10">
-            <div className="flex-1 flex justify-center">
-                <div className="relative w-40 h-40 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg border-4 border-sky-600">
-                <Image
-                    src="/avatar.png"
-                    alt="Vinicius Avatar"
-                    fill
-                    className="object-cover"
-                />
-                </div>
-            </div>
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center text-black dark:text-gray-100"
+    >
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-4xl md:text-5xl font-light leading-[1.4] text-gray-900 dark:text-gray-100 relative"
+      >
+        From imagination to pixels, from passion to{' '}
+        <span className="italic font-medium font-serif relative">
+          bytes
+        </span>{' '}
+        — crafting digital experiences that{' '}
+        <span className="relative inline-block">
+          <RoughNotation
+            type="underline"
+            show={true}
+            color="#009ffb"
+            animationDuration={800}
+            strokeWidth={3}
+          >
+            <span className="font-medium">matter.</span>
+          </RoughNotation>
+        </span>
+      </motion.h1>
+      <motion.h4
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-lg md:text-xl font-light leading-[1.4] text-gray-900 dark:text-gray-100 relative py-5"
+      >
+        As a Full Stack Developer, I specialize in building scalable and maintainable applications using technologies like <AnimatedSpan>Java</AnimatedSpan>, <AnimatedSpan>Spring Boot</AnimatedSpan>, <AnimatedSpan>Next.js</AnimatedSpan>, and <AnimatedSpan>TypeScript</AnimatedSpan>. With a strong foundation in both Backend and Frontend development, I focus on delivering seamless user experiences backed by reliable and efficient systems. Passionate about turning ideas into production-ready solutions, I combine technical expertise with problem-solving to create applications that truly add value.
+      </motion.h4>
 
-        {/* Textos */}
-        <div className="flex-1">
-            <h3>
-                <span className="text-2xl md:text-3xl text-gray-700 text-left">
-                    Hi!👋
-                </span>
-            </h3>
-            <span className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight text-center">
-                I'm <span className="text-sky-600">Vinícius </span> Rodrigues,
-            </span>
-            <p className="mt-6 text-2xl md:text-xl text-gray-600 max-w-2xl mx-auto md:mx-0">
-            A brazilian <span className="font-semibold">Software Engineer</span>, who loves to transform ideas into digital solutions.
-            </p>
-
-            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center">
-                <a
-                    href="#projects"
-                    className="px-6 py-3 bg-sky-500 text-white rounded-4xl shadow hover:bg-sky-600 transition"
-                >
-                    Get in Touch
-                </a>
-                <a
-                    href="#contact"
-                    className="px-6 py-3 font-bold bg-gray-100 text-gray-500 rounded-4xl shadow hover:bg-gray-200 transition"
-                >
-                    RESUME
-                </a>
-            </div>
-        </div>
-        </section>
+      <SocialMediaButtons />
+    </section>
   );
 }
