@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { articles } from "../../data/articles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,8 +51,12 @@ const Articles = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="mb-14">
-      <h2 className="font-semibold italic text-xl text-text-primary mb-6">
+    <motion.section ref={sectionRef} 
+    className="font-semibold text-xl text-text-primary mb-6 text-black dark:text-white"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}>
+      <h2 className="font-semibold italic text-xl text-text-primary mb-6 dark:text-white">
         Articles
       </h2>
 
@@ -70,11 +75,11 @@ const Articles = () => {
               rel="noopener noreferrer"
               className="block"
             >
-              <h3 className="text-lg font-semibold text-text-primary group-hover:text-[#009ffb] transition-colors duration-300">
+              <h3 className="text-lg font-semibold text-text-primary dark:text-white group-hover:text-[#009ffb] transition-colors duration-300">
                 {article.title}
               </h3>
-              <p className="text-xs text-text-secondary">{article.date}</p>
-              <p className="text-sm text-text-secondary mt-1 leading-relaxed">
+              <p className="text-xs text-text-secondary dark:text-gray-400">{article.date}</p>
+              <p className="text-sm text-text-secondary mt-1 leading-relaxed text-gray-400">
                 {article.description}
               </p>
             </a>
@@ -83,7 +88,7 @@ const Articles = () => {
           </li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 };
 
