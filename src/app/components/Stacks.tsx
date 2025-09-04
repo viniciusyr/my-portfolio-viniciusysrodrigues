@@ -1,9 +1,35 @@
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function Stacks() {
   return (
-    <div className=" pt-15 text-gray-500 text-left flex flex-col">
+    <motion.div
+      className="pt-15 text-gray-500 text-left flex flex-col"
+      initial="hidden"
+      animate="visible"
+      variants={container}
+    >
       <span>Tech stack/tools:</span>
-      <ul className="list-image-none flex flex-row gap-3.5 ml-4">
-        <li className="group relative inline-block">
+      <motion.ul
+        className="list-image-none flex flex-row gap-2 ml-4 flex-wrap"
+        variants={container}
+      >
+        {/* 1 - Java */}
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -47,8 +73,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Java
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -67,8 +93,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-50px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Spring Boot
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -92,8 +118,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Javascript
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -112,8 +138,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             ReactJS
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -128,8 +154,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             NextJS
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -144,9 +170,9 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             TailwindCSS
           </span>
-        </li>
-        <li className="h-3 mt-2 w-[1px] bg-slate-300 dark:bg-slate-500"></li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="h-3 mt-2 w-[1px] bg-slate-300 dark:bg-slate-500"></motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -168,8 +194,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-50px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Amazon Cloud
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -184,9 +210,9 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Docker
           </span>
-        </li>
+        </motion.li>
 
-        <li className="group relative inline-block">
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -244,8 +270,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Redis
           </span>
-        </li>
-        <li className="group relative inline-block">
+        </motion.li>
+        <motion.li className="group relative inline-block" variants={item}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -276,8 +302,8 @@ export default function Stacks() {
           <span className="absolute bottom-[-35px] left-1/2 -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
             Figma
           </span>
-        </li>
-      </ul>
-    </div>
+        </motion.li>
+      </motion.ul>
+    </motion.div>
   );
 }
