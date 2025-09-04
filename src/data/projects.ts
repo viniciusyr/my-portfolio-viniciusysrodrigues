@@ -1,12 +1,15 @@
+import { link } from "fs";
+
 export const projects = [
   {
     id: 1,
     title: "Easy Menu",
     start: "March 2025",
     end: "Present",
-    description: "EasyMenu is a web application that allows users to create and manage their own digital menus.",
+    description: "EasyMenu is a web application that allows users to create and manage their own digital menus using Java and Spring as backend and Angular with Motion on Frontend.",
     tech: ["JDK 17", "Spring Boot", "Postgres", "Redis","Docker", "AWS", "GitHub Actions", "Angular"],
-    link: "https://github.com/viniciusyr/easymenu",
+    git: "https://github.com/viniciusyr/easymenu",
+    link: " "
   },
   {
     id: 2,
@@ -15,6 +18,7 @@ export const projects = [
     end: "September 2025",
     description: "My personal portfolio built with Next.js, TypeScript and TailwindCSS. It features a modern design and smooth animations using Framer Motion, Rough Notation and GSAP.",
     tech: ["Next.js", "Typescript", "TailwindCSS", "Motion", "GSAP", "Rough Notation", "Vercel"],
-    link: "https://meuportfolio.com",
+    git: "https://github.com/viniciusyr/my-portfolio-viniciusysrodrigues",
+    link: "https://viniciusysrodrigues.com/",
   },
 ];

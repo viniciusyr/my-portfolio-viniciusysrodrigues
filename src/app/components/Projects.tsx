@@ -1,86 +1,45 @@
 "use client";
-
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { projects } from "@/data/projects";
+import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
-gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Projects() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current || !titleRef.current || !projectsRef.current)
-      return;
-
-    gsap.from(titleRef.current, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top 80%",
-        toggleActions: "play none none none",
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
       },
-    });
+    },
+  };
 
-    gsap.from(projectsRef.current.children, {
-      y: 30,
-      opacity: 0,
-      stagger: 0.2,
-      duration: 0.8,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top 80%",
-        toggleActions: "play none none none",
-      },
-    });
-  }, []);
-
-  return (
-    <section
-      ref={sectionRef}
-      className="flex flex-col items-start text-black dark:text-gray-100 py-15"
+return (
+    <motion.section
+      className="mb-14 pt-10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
     >
-      <h1
-        ref={titleRef}
-        className="text-2xl italic font-bold mb-12 text-gray-900 dark:text-gray-100"
+      <motion.h2
+        className="font-semibold italic text-xl text-text-primary mb-6"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
         Projects
-      </h1>
+      </motion.h2>
 
-      <div
-        ref={projectsRef}
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl"
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        variants={containerVariants}
       >
-        {/* Projects */}
-        <motion.div
-          whileHover={{
-            position: 0,
-            y: -5,
-            boxShadow: "-1px 2px 10px 1px #009ffb",
-          }}
-          transition={{ duration: 0.5 }}
-          className="bg-white dark:bg-black p-6 rounded"
-        >
-          Project 1
-        </motion.div>
-        <motion.div
-          whileHover={{
-            position: 0,
-            y: -5,
-            boxShadow: "-1px 2px 10px 1px #009ffb",
-          }}
-          transition={{ duration: 0.5 }}
-          className="bg-white dark:bg-black p-6 rounded"
-        >
-          Project 2
-        </motion.div>
-      </div>
-    </section>
+        {projects.reverse().map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </motion.div>
+    </motion.section>
   );
-}
+};
