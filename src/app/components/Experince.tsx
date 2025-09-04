@@ -1,10 +1,9 @@
 "use client";
-import { projects } from "@/data/projects";
-import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import ExperienceCard from "./ExperienceCard";
+import { experiences } from "../../data/experience";
 
-
-export default function Projects() {
+const Experience = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -15,9 +14,9 @@ export default function Projects() {
     },
   };
 
-return (
+  return (
     <motion.section
-      className="mb-14 pt-10"
+      className="mb-14"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -29,17 +28,16 @@ return (
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Projects
+        Experience
       </motion.h2>
 
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
-        variants={containerVariants}
-      >
-        {projects.reverse().map((project) => (
-          <ProjectCard key={project.id} project={project} />
+      <motion.div className="space-y-6">
+        {experiences.map((experience) => (
+          <ExperienceCard key={experience.id} experience={experience} />
         ))}
       </motion.div>
     </motion.section>
   );
 };
+
+export default Experience;
