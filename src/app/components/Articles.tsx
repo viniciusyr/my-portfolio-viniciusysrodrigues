@@ -14,7 +14,6 @@ const Articles = () => {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    // Título com efeito de "slide + blur"
     gsap.fromTo(
       sectionRef.current.querySelector("h2"),
       { opacity: 0, y: 40, filter: "blur(6px)" },
@@ -31,7 +30,6 @@ const Articles = () => {
       }
     );
 
-    // Lista com stagger animado
     gsap.fromTo(
       itemsRef.current,
       { opacity: 0, y: 30, x: -20, rotate: -2 },
@@ -81,7 +79,6 @@ const Articles = () => {
               </p>
             </a>
 
-            {/* linha decorativa animada no hover */}
             <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#009ffb] transition-all duration-500 group-hover:w-full"></span>
           </li>
         ))}

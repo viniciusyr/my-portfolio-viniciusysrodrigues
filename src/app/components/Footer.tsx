@@ -55,7 +55,7 @@ const Footer = () => {
             className="text-text-secondary text-sm text-gray-500 dark:text-gray-400"
             variants={itemVariants}
           >
-            © {currentYear} Vinicius Rodrigues. All rights reserved.
+           Copyright © {currentYear} Vinicius Rodrigues.
           </motion.p>
 
           <motion.div
