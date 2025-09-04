@@ -3,6 +3,7 @@ import Hero from "@/app/components/Hero";
 import Projects from "@/app/components/Projects";
 import Experience from "@/app/components/Experince";
 import Footer from "./components/Footer";
+import Articles from "./components/Articles";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <Experience/>
+        <Articles />
         <Footer />
       </div>
     </main>
