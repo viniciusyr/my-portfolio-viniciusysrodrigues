@@ -38,7 +38,7 @@ const ExperienceCard = ({ experience }: { experience: Experiences }) => {
       >
      
         <motion.div
-          className="w-12 h-12 rounded-lg overflow-hidden bg-white flex items-center justify-center"
+          className="w-12 h-12 rounded-lg border-1 border-gray-400 dark:border-gray-500 overflow-hidden bg-white flex items-center justify-center"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           whileHover={{
