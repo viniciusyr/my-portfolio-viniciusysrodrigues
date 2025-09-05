@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { RoughNotation } from "react-rough-notation";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import AnimatedSpan from "./AnimatedSpan";
 import SocialMediaButtons from "./SocialMediaButtons";
 import SpecialButton from "./SpecialButton";
@@ -13,44 +13,64 @@ export default function Hero() {
       id="home"
       className="flex flex-col items-start justify-center text-black dark:text-gray-100"
     >
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-4xl font-light mb-4 leading-[1.4] text-gray-900 dark:text-gray-100 relative"
-      >
-        From imagination to pixels, from passion to{" "}
-        <span className="italic font-medium font-serif relative">bytes</span> —
-        crafting digital experiences that{" "}
-        <span className="relative inline-block">
-          <RoughNotation
-            type="underline"
-            show={true}
-            color="#009ffb"
-            animationDuration={800}
-            strokeWidth={3}
-          >
-            <span className="font-medium">matter.</span>
-          </RoughNotation>
-        </span>
-      </motion.h1>
+      <RoughNotationGroup show={true}>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl font-light mb-4 leading-[1.4] text-gray-900 dark:text-gray-100 relative"
+        >
+          Turning ideas into{" "}
+          <span className="relative inline-block">
+            <RoughNotation
+              type="highlight"
+              color="#F8FF6D"
+              animationDuration={1200}
+              strokeWidth={1}
+            >
+              <span>code</span>
+            </RoughNotation>
+          </span>
+           , and code into{" "}
+          <span className="relative inline-block">
+            <RoughNotation
+              type="box"
+              color="#80f975"
+              animationDuration={1200}
+              strokeWidth={3}
+            >
+              <span>experiences</span>
+            </RoughNotation>
+          </span>{" "}
+          — where creativity meets{" "}
+          <span className="relative inline-block">
+            <RoughNotation
+              type="underline"
+              color="#009ffb"
+              animationDuration={800}
+              strokeWidth={3}
+            >
+              <span className="font-medium">technology.</span>
+            </RoughNotation>
+          </span>
+        </motion.h1>
+      </RoughNotationGroup>
+
       <motion.h4
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="text-md font-light leading-6 text-gray-700 dark:text-gray-100 relative py-5 text-justify mb-4"
       >
-        As a Full Stack Developer, I specialize in building scalable and
-        maintainable applications using technologies like{" "}
-        <AnimatedSpan>Java</AnimatedSpan>,{" "}
+        I’m a Full Stack Developer focused on building scalable and maintainable
+        applications with <AnimatedSpan>Java</AnimatedSpan>,{" "}
         <AnimatedSpan>Spring Boot</AnimatedSpan>,{" "}
         <AnimatedSpan>Next.js</AnimatedSpan>, and{" "}
-        <AnimatedSpan>TypeScript</AnimatedSpan>. With a strong foundation in
-        both Backend and Frontend development, I focus on delivering seamless
-        user experiences backed by reliable and efficient systems. Passionate
-        about turning ideas into production-ready solutions, I combine technical
-        expertise with problem-solving to create applications that truly add
-        value.
+        <AnimatedSpan>TypeScript</AnimatedSpan>. With experience across both
+        backend and frontend, I aim to create reliable systems paired with
+        intuitive user experiences. Passionate about transforming ideas into
+        real solutions, I combine technical expertise and problem-solving to
+        deliver applications that bring real value.
       </motion.h4>
 
       <div className="flex justify-start gap-4 ">
