@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { SiSpring, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiDocker} from "react-icons/si";
-import { AiOutlineJavaScript } from "react-icons/ai";
 
 const container = {
   hidden: { opacity: 0 },
@@ -21,7 +20,7 @@ const item = {
 export default function Stacks() {
   return (
     <motion.div
-      className="pt-15 text-gray-500 text-left flex flex-col"
+      className="pt-15 text-gray-500 text- flex flex-col"
       initial="hidden"
       animate="visible"
       variants={container}
