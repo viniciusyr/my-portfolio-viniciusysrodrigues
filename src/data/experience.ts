@@ -1,4 +1,4 @@
-import { link } from "fs";
+
 
 export const experiences = [{
     id: 1,
@@ -7,7 +7,8 @@ export const experiences = [{
     start: "Jan, 2025",
     end: "Present",
     description: "Worked on various projects using Java, Spring Boot, and Angular.",
-    link: "#"
+    link: "#",
+    logo: "/icons/companies/freelancer-logo.png"
 },
 {
     id: 2,
@@ -16,7 +17,8 @@ export const experiences = [{
     start: "Jan, 2023",
     end: "May, 2024",
     description: "Developed the CSR and Marketing departments by implementing methodologies, scripts, and training programs for over 150 team members from Brazil, China, the Philippines, Indonesia, and Malaysia. Represented the company in negotiations, establishing partnerships with suppliers and marketing agencies to expand service reach and improve operational efficiency.",
-    link: "https://companieshouse.ph/anoc99-corporation"
+    link: "https://companieshouse.ph/anoc99-corporation",
+    logo: "/icons/companies/anoc99-logo.png"
 },
 {
     id: 3,
@@ -25,6 +27,8 @@ export const experiences = [{
     start: "Jan, 2016",
     end: "Oct, 2022",
     description: "Monitored manufacturing processes and ensured product quality for customers. Supported the implementation of ISO 9001:2015 and employee training. Led internal improvements, including process automation using VBA, 5S continuous improvement, process mapping, risk/opportunity management, and process automation.",
-    link: "https://isma.com.br/"
+    link: "https://isma.com.br/",
+    logo: "/icons/companies/isma-logo.png"
+    
 
 }]
