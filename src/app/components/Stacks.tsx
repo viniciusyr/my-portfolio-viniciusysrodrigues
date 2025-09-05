@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { SiSpring, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiDocker} from "react-icons/si";
+import { AiOutlineJavaScript } from "react-icons/ai";
 
 const container = {
   hidden: { opacity: 0 },
@@ -20,12 +21,12 @@ const item = {
 export default function Stacks() {
   return (
     <motion.div
-      className="pt-15 text-gray-500 text- flex flex-col"
+      className="pt-15 text-gray-500 text-left flex flex-col"
       initial="hidden"
       animate="visible"
       variants={container}
     >
-      <span>Tech stack/tools:</span>
+      <motion.span className="font-semibold text-xl text-text-primary mb-5 text-black dark:text-white">Tech stack</motion.span>
       <motion.ul
         className="list-image-none flex flex-row gap-2 ml-4 flex-wrap"
         variants={container}

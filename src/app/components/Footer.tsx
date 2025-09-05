@@ -52,7 +52,7 @@ const Footer = () => {
           variants={containerVariants}
         >
           <motion.p
-            className="text-text-secondary text-sm text-gray-500 dark:text-gray-400"
+            className="text-text-secondary text-sm text-gray-400 dark:text-gray-500"
             variants={itemVariants}
           >
            Copyright © {currentYear} Vinicius Rodrigues.
@@ -70,7 +70,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-secondary hover:text-text-primary transition-colors duration-200"
+                  className="text-text-secondary hover:text-text-primary transition-colors duration-200 text-gray-500 dark:text-gray-400"
                   aria-label={social.name}
                   variants={socialVariants}
                   custom={index}
@@ -87,7 +87,7 @@ const Footer = () => {
                   }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <Icon className="h-5 w-5 fill-gray-500 dark:fill-gray-400" />
+                  <Icon className="h-5 w-5" />
                 </motion.a>
               );
             })}

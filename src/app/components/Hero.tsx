@@ -21,7 +21,7 @@ export default function Hero() {
           className="text-4xl font-light mb-4 leading-[1.4] text-gray-900 dark:text-gray-100 relative"
         >
           Turning ideas into{" "}
-          <span className="relative inline-block">
+          <span className="relative inline-block dark:text-black">
             <RoughNotation
               type="highlight"
               color="#F8FF6D"
@@ -66,8 +66,8 @@ export default function Hero() {
         applications with <AnimatedSpan>Java</AnimatedSpan>,{" "}
         <AnimatedSpan>Spring Boot</AnimatedSpan>,{" "}
         <AnimatedSpan>Next.js</AnimatedSpan>, and{" "}
-        <AnimatedSpan>TypeScript</AnimatedSpan>. With experience across both
-        backend and frontend, I aim to create reliable systems paired with
+        <AnimatedSpan>TypeScript</AnimatedSpan>. With experience across both{" "}
+        <AnimatedSpan>Backend</AnimatedSpan> and <AnimatedSpan>Frontend</AnimatedSpan>, I aim to create reliable systems paired with
         intuitive user experiences. Passionate about transforming ideas into
         real solutions, I combine technical expertise and problem-solving to
         deliver applications that bring real value.

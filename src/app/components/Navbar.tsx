@@ -18,7 +18,7 @@ export default function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      {/* Logo + textos */}
+
       <motion.div
         className="flex items-center gap-4"
         initial="hidden"
@@ -30,7 +30,6 @@ export default function Navbar() {
           },
         }}
       >
-        {/* Logo */}
         <motion.a
           href="/"
           className="cursor-pointer"
@@ -48,7 +47,6 @@ export default function Navbar() {
           />
         </motion.a>
 
-        {/* Nome + título */}
         <motion.div
           className="flex flex-col"
           variants={{
@@ -60,12 +58,13 @@ export default function Navbar() {
             Vinicius Rodrigues 🇧🇷
           </motion.p>
           <motion.p className="text-gray-500 dark:text-gray-300 font-normal text-sm">
-            Fullstack Developer
+            Software Engineer | Fullstack Developer
           </motion.p>
         </motion.div>
       </motion.div>
 
-      {/* Botão Dark Mode */}
+
+      {/* Dark theme button */}
       {mounted && (
         <motion.button
           onClick={toggle}
