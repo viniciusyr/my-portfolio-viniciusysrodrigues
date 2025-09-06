@@ -6,19 +6,21 @@ import AnimatedSpan from "./AnimatedSpan";
 import SocialMediaButtons from "./SocialMediaButtons";
 import SpecialButton from "./SpecialButton";
 import Stacks from "@/app/components/Stacks";
+import ProfileCard from "./ProfileCard";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="flex flex-col items-start justify-center text-black dark:text-gray-100"
+      className="pt-32 flex flex-col items-start justify-center text-black dark:text-gray-100 max-w-3xl mx-auto"
     >
-      <RoughNotationGroup show={true}>
+      {/* === Headline === */}
+      <RoughNotationGroup show>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl font-light mb-4 leading-[1.4] text-gray-900 dark:text-gray-100 relative"
+          className="text-6xl w-full font-light leading-snug text-gray-900 dark:text-gray-100 mb-10"
         >
           Turning ideas into{" "}
           <span className="relative inline-block dark:text-black">
@@ -31,7 +33,7 @@ export default function Hero() {
               <span>code</span>
             </RoughNotation>
           </span>
-           , and code into{" "}
+          , and code into{" "}
           <span className="relative inline-block">
             <RoughNotation
               type="box"
@@ -50,30 +52,39 @@ export default function Hero() {
               animationDuration={800}
               strokeWidth={3}
             >
-              <span className="font-medium">technology.</span>
+              <span className="font-bold">technology.</span>
             </RoughNotation>
           </span>
         </motion.h1>
       </RoughNotationGroup>
 
-      <motion.h4
+      {/*  Profile Card  */}
+      <div className="w-full flex flex-col justify-center mb-8">
+        <ProfileCard />
+        <Stacks />
+      </div>
+
+      {/*  Short Bio  */}
+      <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-md font-light leading-6 text-gray-700 dark:text-gray-100 relative py-5 text-justify mb-4"
+        className="text-md font-light leading-7 text-gray-700 dark:text-gray-100 text-justify mb-8"
       >
         I’m a Full Stack Developer focused on building scalable and maintainable
         applications with <AnimatedSpan>Java</AnimatedSpan>,{" "}
         <AnimatedSpan>Spring Boot</AnimatedSpan>,{" "}
         <AnimatedSpan>Next.js</AnimatedSpan>, and{" "}
         <AnimatedSpan>TypeScript</AnimatedSpan>. With experience across both{" "}
-        <AnimatedSpan>Backend</AnimatedSpan> and <AnimatedSpan>Frontend</AnimatedSpan>, I aim to create reliable systems paired with
-        intuitive user experiences. Passionate about transforming ideas into
-        real solutions, I combine technical expertise and problem-solving to
-        deliver applications that bring real value.
-      </motion.h4>
+        <AnimatedSpan>Backend</AnimatedSpan> and{" "}
+        <AnimatedSpan>Frontend</AnimatedSpan>, I aim to create reliable systems
+        paired with intuitive user experiences. Passionate about transforming
+        ideas into real solutions, I combine technical expertise and
+        problem-solving to deliver applications that bring real value.
+      </motion.p>
 
-      <div className="flex justify-start gap-4 ">
+      {/*  Actions  */}
+      <div className="flex flex-row justify-center items-center gap-4 mb-10">
         <SpecialButton
           svg={
             <svg
@@ -82,8 +93,6 @@ export default function Hero() {
               strokeWidth="0"
               viewBox="0 0 15 15"
               className="h-4 w-4 text-gray-200 dark:text-gray-900"
-              height="1em"
-              width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -98,8 +107,14 @@ export default function Hero() {
         </SpecialButton>
         <SocialMediaButtons />
       </div>
-      <motion.div className="flex w-full justify-start">
-        <Stacks />
+
+      
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4 }}
+        className="w-full"
+      >
       </motion.div>
     </section>
   );

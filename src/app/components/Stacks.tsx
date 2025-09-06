@@ -21,12 +21,12 @@ const item = {
 export default function Stacks() {
   return (
     <motion.div
-      className="pt-15 text-gray-500 text-left flex flex-col"
+      className="pt-4  text-gray-500 justify-center flex flex-row"
       initial="hidden"
       animate="visible"
       variants={container}
     >
-      <motion.span className="font-semibold text-xl text-text-primary mb-5 text-black dark:text-white">Tech stack</motion.span>
+      {/* <motion.span className=" text-[15px] text-text-primary mb-5 text-gray-400 dark:text-white">Current tech stack</motion.span> */}
       <motion.ul
         className="list-image-none flex flex-row gap-2 ml-4 flex-wrap"
         variants={container}

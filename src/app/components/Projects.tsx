@@ -17,7 +17,8 @@ export default function Projects() {
 
 return (
     <motion.section
-      className="mb-14 pt-10"
+      id="projects"
+      className="mb-14 pt-10 scroll-mt-24"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

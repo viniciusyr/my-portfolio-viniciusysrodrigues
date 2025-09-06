@@ -13,46 +13,50 @@ export default function SocialMediaButtons() {
       {/* Email */}
       <motion.a
         href="mailto:viniciusysrodrigues@gmail.com"
-        className="bg-gray-300 dark:bg-gray-700 rounded-4xl p-2 flex items-center justify-center"
+        className="flex items-center justify-center"
         whileHover={{
           scale: 1.15,
-          rotate: 8
+          rotate: 8,
         }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 300, damping: 18 }}
         aria-label="Email"
       >
-        <FaEnvelope className="w-6 h-6 fill-gray-900 dark:fill-white" />
+        <FaEnvelope className="w-6 h-6 fill-gray-800 dark:fill-gray-100" />
       </motion.a>
 
       {/* GitHub */}
       <motion.a
         href="https://github.com/viniciusyr/"
-        className="bg-gray-300 dark:bg-gray-700 rounded-4xl p-2 flex items-center justify-center"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center"
         whileHover={{
           scale: 1.15,
-          rotate: -8
+          rotate: -8,
         }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 300, damping: 18 }}
         aria-label="GitHub"
       >
-        <FaGithub className="w-6 h-6 fill-gray-900 dark:fill-white" />
+        <FaGithub className="w-6 h-6 fill-gray-800 dark:fill-gray-100" />
       </motion.a>
 
       {/* LinkedIn */}
       <motion.a
         href="https://www.linkedin.com/in/viniciusysrodrigues/"
-        className="bg-gray-300 dark:bg-gray-700 rounded-4xl p-2 flex items-center justify-center"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center"
         whileHover={{
           scale: 1.15,
-          rotate: 8
+          rotate: 8,
         }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 300, damping: 18 }}
         aria-label="LinkedIn"
       >
-        <FaLinkedin className="w-6 h-6 fill-gray-900 dark:fill-white" />
+        <FaLinkedin className="w-6 h-6 fill-gray-800 dark:fill-gray-100" />
       </motion.a>
     </motion.div>
   );
