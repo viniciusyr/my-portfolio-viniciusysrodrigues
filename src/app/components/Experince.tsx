@@ -16,7 +16,8 @@ const Experience = () => {
 
   return (
     <motion.section
-      className="mb-14"
+      id="experience"
+      className="mb-14 scroll-mt-24"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
