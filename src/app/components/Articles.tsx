@@ -56,8 +56,8 @@ const Articles = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}>
-      <h2 className="font-semibold italic text-xl text-text-primary mb-6 dark:text-white">
-        Articles
+      <h2 className="font-semibold text-[15px] text-text-primary mb-6 dark:text-white">
+        RECOMMENDED ARTICLES
       </h2>
 
       <ul className="flex flex-col space-y-6 border-gray-300 dark:border-gray-700">

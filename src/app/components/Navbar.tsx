@@ -5,8 +5,33 @@ import Link from "next/link";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDarkMode } from "@/hooks/useDarkMode";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import SocialMediaButtons from "./SocialMediaButtons";
+import { socials } from "../../data/socials";
+
+  const containerVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const socialVariants: Variants = {
+    hidden: { scale: 0 },
+    visible: (i: number) => ({
+      scale: 1,
+      transition: {
+        delay: i * 0.2,
+        type: "spring",
+        stiffness: 80,
+      },
+    }),
+  };
 
 export default function Navbar() {
   const { isDark, toggle } = useDarkMode();
@@ -62,7 +87,7 @@ export default function Navbar() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="text-[11px] text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition"
+            className="text-[11px] text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition"
           >
             PROJECTS
           </motion.a>
@@ -75,14 +100,47 @@ export default function Navbar() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="text-[11px] text-white dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition"
+            className="text-[11px] text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition"
           >
             EXPERIENCE
           </motion.a>
         </Link>
       </motion.div>
 
-      <SocialMediaButtons />
+      <motion.div
+                  className="flex items-center gap-4"
+                  variants={containerVariants}
+                >
+                  {socials.map((social, index) => {
+                    const Icon = social.icon;
+                    return (
+                      <motion.a
+                        key={social.id}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-text-secondary hover:text-text-primary transition-colors duration-200 text-gray-500 dark:text-gray-400"
+                        aria-label={social.name}
+                        variants={socialVariants}
+                        custom={index}
+                        whileHover={{
+                          scale: 1.2,
+                          rotate: [0, -10, 10, -10, 0],
+                          transition: {
+                            duration: 0.3,
+                            rotate: {
+                              repeat: 0,
+                              duration: 0.5,
+                            },
+                          },
+                        }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <Icon className="h-5 w-5" />
+                      </motion.a>
+                    );
+                  })}
+                </motion.div>
 
       {/* Dark theme button */}
       {mounted && (

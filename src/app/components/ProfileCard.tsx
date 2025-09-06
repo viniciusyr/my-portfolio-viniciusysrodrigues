@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ProfileCard() {
   return (
     <motion.div
-      className="pt-20 flex flex-col items-center text-center gap-4"
+      className="pt-15 flex flex-col items-center text-center gap-4"
       initial="hidden"
       animate="visible"
       variants={{

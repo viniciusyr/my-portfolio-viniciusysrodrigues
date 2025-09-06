@@ -6,7 +6,7 @@ export const experiences = [{
     title: "Full Stack Developer",
     start: "Jan, 2025",
     end: "Present",
-    description: "Worked on various projects using Java, Spring Boot, and Angular.",
+    description: "Developed and deployed a responsive landing page with modern web practices. Collaborated with the client to gather requirements, ensure performance optimization, and deliver a scalable foundation for future features.",
     link: "#",
     logo: "/icons/companies/freelancer-logo.png"
 },

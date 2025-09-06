@@ -10,26 +10,27 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: 1,
-    title: "Understanding Java Memory Management",
-    link: "https://medium.com/...",
+    title: "Java Memory Management Explained",
+    link: "https://www.digitalocean.com/community/tutorials/java-jvm-memory-model-memory-management-in-java",
     description:
-      "A deep dive into how memory works in Java, covering heap, stack, and garbage collection.",
-    date: "Feb 2025",
+      "Um mergulho profundo no modelo de memória da JVM: heap, stack, Metaspace, algoritmos de garbage collection como G1, ZGC e como monitorar e diagnosticar problemas com ferramentas como VisualVM e Java Flight Recorder.",
+    date: "Aug 2025",
   },
   {
     id: 2,
-    title: "Building a SaaS with Spring Boot",
-    link: "https://dev.to/...",
+    title: "The Ultimate Guide to Building Scalable SaaS Applications with Spring Boot",
+    link: "https://medium.com/@ShantKhayalian/the-ultimate-guide-to-building-scalable-saas-applications-with-spring-boot-c5d52b4c1cd5",
     description:
-      "Step-by-step guide on setting up a scalable SaaS architecture using Spring Boot and MySQL.",
-    date: "Jan 2025",
+      "Guia completo para arquitetar e escalar aplicações SaaS com Spring Boot: desde arquitetura multi-tenant, autenticação, roteamento via API Gateway até billing, observabilidade e escala com melhores práticas.",
+    date: "Apr 2025",
   },
   {
     id: 3,
-    title: "Next.js + Framer Motion: A Smooth Portfolio",
-    link: "https://hashnode.com/...",
+    title: "How to Use Framer Motion for Animations in Next.js",
+    link: "https://staticmania.com/blog/how-to-use-framer-motion-for-animations-in-next-js",
     description:
-      "How to build an animated developer portfolio with Next.js and Framer Motion.",
-    date: "Dec 2024",
+      "Tutorial prático para integrar animações suaves com Framer Motion em aplicações Next.js (App Router), cobrindo instalação, componentes motion, variantes, animações de entrada/saída e otimizações.",
+    date: "Aug 2024 (updated Sep 2025)",
   },
 ];
+

@@ -84,7 +84,7 @@ export default function Hero() {
       </motion.p>
 
       {/*  Actions  */}
-      <div className="flex flex-row justify-center items-center gap-4 mb-10">
+      <div className="w-full flex flex-row justify-center items-center gap-4 mb-10">
         <SpecialButton
           svg={
             <svg
@@ -105,17 +105,16 @@ export default function Hero() {
         >
           Resume
         </SpecialButton>
-        <SocialMediaButtons />
-      </div>
 
-      
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="w-full"
-      >
-      </motion.div>
+        <motion.span className="flex items-center gap-2 text-sm font-medium rounded-2xl py-2 px-4 bg-green-200 text-green-700 dark:text-gray-900 hover:text-gray-900 dark:hover:text-white transition">
+          <motion.div
+            className="w-3 h-3 rounded-full bg-green-500"
+            animate={{ opacity: [1, 0.4, 1], scale: [1, 0.8, 1] }}
+            transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+          />
+          Available for collaborations
+        </motion.span>
+      </div>
     </section>
   );
 }

@@ -25,12 +25,12 @@ return (
       variants={containerVariants}
     >
       <motion.h2
-        className="font-semibold text-xl text-text-primary mb-6 text-black dark:text-white"
+        className="font-semibold text-[15px] text-text-primary mb-6 dark:text-white"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Projects
+        PROJECTS
       </motion.h2>
 
       <motion.div
