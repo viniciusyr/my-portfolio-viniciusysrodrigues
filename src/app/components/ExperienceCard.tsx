@@ -8,7 +8,7 @@ interface Experiences {
   start: string;
   end: string;
   description: string;
-  link: string;
+  link?: string;
   logo: string;
 }
 

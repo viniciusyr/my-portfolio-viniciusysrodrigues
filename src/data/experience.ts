@@ -27,6 +27,7 @@ export const experiences = [{
     start: "Jan, 2023",
     end: "Aug, 2023",
     description: "Managed the CSR team, growing from just 5 to over 50 agents within a few months. Developed and delivered training for new employees. Created and implemented a KPI-based bonus system to incentivize and reward employee performance. Developed departmental methodologies, customer service scripts, and training for over 50 employees (Brazilians, Chinese, and Filipinos). Additionally, was responsible for ensuring compliance during external audits.",
+    link:"https://www.emis.com/php/company-profile/PH/Anoc99_Corporation_en_16574758.html",
     logo: "/icons/companies/anoc99-logo.png"
 },
 {
