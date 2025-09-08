@@ -7,7 +7,7 @@ export const projects = [
     description: "EasyMenu is a web application that allows users to create and manage their own digital menus using Java and Spring as backend and Angular with Motion on Frontend.",
     tech: ["JDK 17", "Spring Boot", "Postgres", "Redis","Docker", "AWS", "GitHub Actions", "Angular"],
     git: "https://github.com/viniciusyr/easymenu",
-    link: " "
+    link: null
   },
   {
     id: 2,

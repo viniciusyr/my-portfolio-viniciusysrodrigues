@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import AnimatedSpan from "./AnimatedSpan";
-import SocialMediaButtons from "./SocialMediaButtons";
 import SpecialButton from "./SpecialButton";
 import Stacks from "@/app/components/Stacks";
 import ProfileCard from "./ProfileCard";
@@ -71,16 +70,16 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
         className="text-md font-light leading-7 text-gray-700 dark:text-gray-100 text-justify mb-8"
       >
-        I’m a Full Stack Developer focused on building scalable and maintainable
-        applications with <AnimatedSpan>Java</AnimatedSpan>,{" "}
-        <AnimatedSpan>Spring Boot</AnimatedSpan>,{" "}
-        <AnimatedSpan>Next.js</AnimatedSpan>, and{" "}
-        <AnimatedSpan>TypeScript</AnimatedSpan>. With experience across both{" "}
-        <AnimatedSpan>Backend</AnimatedSpan> and{" "}
-        <AnimatedSpan>Frontend</AnimatedSpan>, I aim to create reliable systems
-        paired with intuitive user experiences. Passionate about transforming
-        ideas into real solutions, I combine technical expertise and
-        problem-solving to deliver applications that bring real value.
+        I’m a <AnimatedSpan>Backend Developer</AnimatedSpan> specialized in{" "}
+        <AnimatedSpan>Java</AnimatedSpan> and{" "}
+        <AnimatedSpan>Spring Boot</AnimatedSpan>, focused on building scalable
+        and maintainable applications. While my main expertise is in{" "}
+        <AnimatedSpan>Backend</AnimatedSpan> development — designing APIs, database modeling, and cloud deployments —
+        I also bring experience with <AnimatedSpan>TypeScript</AnimatedSpan> and <AnimatedSpan>Next.js</AnimatedSpan>, which allows me to contribute
+        effectively to <AnimatedSpan>Frontend</AnimatedSpan> projects when
+        needed. Passionate about transforming ideas into real solutions, I
+        combine technical expertise and problem-solving skills to deliver
+        applications that bring real value.
       </motion.p>
 
       {/*  Actions  */}

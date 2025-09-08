@@ -42,7 +42,7 @@ export default function ProfileCard() {
           Vinicius Rodrigues 🇧🇷
         </motion.p>
         <motion.p className="text-gray-500 dark:text-gray-300 font-normal text-sm">
-          Software Engineer | Fullstack Developer
+          Software Engineer | Backend Developer
         </motion.p>
       </motion.div>
     </motion.div>

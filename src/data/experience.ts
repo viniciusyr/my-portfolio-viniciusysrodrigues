@@ -6,7 +6,7 @@ export const experiences = [{
     title: "Full Stack Developer",
     start: "Jan, 2025",
     end: "Present",
-    description: "Developed and deployed a responsive landing page with modern web practices. Collaborated with the client to gather requirements, ensure performance optimization, and deliver a scalable foundation for future features.",
+    description: "Delivered a client landing page project, building the frontend with React, TailwindCSS, and Motion while integrating it with a Spring Boot REST API. Focused on clean architecture and backend reliability to ensure scalability and maintainability. Supported content management by connecting the system with WordPress APIs, providing a seamless user experience.",
     link: "#",
     logo: "/icons/companies/freelancer-logo.png"
 },

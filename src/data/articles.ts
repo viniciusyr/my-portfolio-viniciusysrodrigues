@@ -8,29 +8,29 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-  {
-    id: 1,
-    title: "Java Memory Management Explained",
-    link: "https://www.digitalocean.com/community/tutorials/java-jvm-memory-model-memory-management-in-java",
-    description:
-      "Um mergulho profundo no modelo de memória da JVM: heap, stack, Metaspace, algoritmos de garbage collection como G1, ZGC e como monitorar e diagnosticar problemas com ferramentas como VisualVM e Java Flight Recorder.",
-    date: "Aug 2025",
-  },
-  {
-    id: 2,
-    title: "The Ultimate Guide to Building Scalable SaaS Applications with Spring Boot",
-    link: "https://medium.com/@ShantKhayalian/the-ultimate-guide-to-building-scalable-saas-applications-with-spring-boot-c5d52b4c1cd5",
-    description:
-      "Guia completo para arquitetar e escalar aplicações SaaS com Spring Boot: desde arquitetura multi-tenant, autenticação, roteamento via API Gateway até billing, observabilidade e escala com melhores práticas.",
-    date: "Apr 2025",
-  },
-  {
-    id: 3,
-    title: "How to Use Framer Motion for Animations in Next.js",
-    link: "https://staticmania.com/blog/how-to-use-framer-motion-for-animations-in-next-js",
-    description:
-      "Tutorial prático para integrar animações suaves com Framer Motion em aplicações Next.js (App Router), cobrindo instalação, componentes motion, variantes, animações de entrada/saída e otimizações.",
-    date: "Aug 2024 (updated Sep 2025)",
-  },
+{
+  id: 1,
+  title: "A Guide to Java Streams in Practice",
+  link: "https://www.baeldung.com/java-8-streams",
+  description:
+    "Comprehensive guide to Java Streams API, covering functional programming concepts, pipelines, filtering, mapping, reducing, collectors, parallel streams, and best practices for performance.",
+  date: "Updated 2025",
+},
+{
+  id: 2,
+  title: "Building Microservices with Spring Boot – A Practical Guide",
+  link: "https://www.baeldung.com/spring-boot-microservices",
+  description:
+    "Step-by-step guide to designing and implementing microservices using Spring Boot, including service discovery, API Gateway, inter-service communication, resilience, and observability.",
+  date: "Updated 2025",
+},
+{
+  id: 3,
+  title: "Patterns of Distributed Systems",
+  link: "https://martinfowler.com/articles/patterns-of-distributed-systems/",
+  description:
+    "Martin Fowler’s collection of core distributed systems patterns, including leader election, circuit breakers, service discovery, load balancing, and consistency models, explained with practical diagrams.",
+  date: "Ongoing (2025)",
+}
 ];
 
