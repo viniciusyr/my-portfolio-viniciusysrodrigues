@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import AnimatedSpan from "./AnimatedSpan";
-import SocialMediaButtons from "./SocialMediaButtons";
 import SpecialButton from "./SpecialButton";
 import Stacks from "@/app/components/Stacks";
 import ProfileCard from "./ProfileCard";
@@ -71,20 +70,20 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
         className="text-md font-light leading-7 text-gray-700 dark:text-gray-100 text-justify mb-8"
       >
-        I’m a Full Stack Developer focused on building scalable and maintainable
-        applications with <AnimatedSpan>Java</AnimatedSpan>,{" "}
-        <AnimatedSpan>Spring Boot</AnimatedSpan>,{" "}
-        <AnimatedSpan>Next.js</AnimatedSpan>, and{" "}
-        <AnimatedSpan>TypeScript</AnimatedSpan>. With experience across both{" "}
-        <AnimatedSpan>Backend</AnimatedSpan> and{" "}
-        <AnimatedSpan>Frontend</AnimatedSpan>, I aim to create reliable systems
-        paired with intuitive user experiences. Passionate about transforming
-        ideas into real solutions, I combine technical expertise and
-        problem-solving to deliver applications that bring real value.
+        I’m a <AnimatedSpan>Backend Developer</AnimatedSpan> specialized in{" "}
+        <AnimatedSpan>Java</AnimatedSpan> and{" "}
+        <AnimatedSpan>Spring Boot</AnimatedSpan>, focused on building scalable
+        and maintainable applications. While my main expertise is in{" "}
+        <AnimatedSpan>Backend</AnimatedSpan> development — designing APIs, database modeling, and cloud deployments —
+        I also bring experience with <AnimatedSpan>TypeScript</AnimatedSpan> and <AnimatedSpan>Next.js</AnimatedSpan>, which allows me to contribute
+        effectively to <AnimatedSpan>Frontend</AnimatedSpan> projects when
+        needed. Passionate about transforming ideas into real solutions, I
+        combine technical expertise and problem-solving skills to deliver
+        applications that bring real value.
       </motion.p>
 
       {/*  Actions  */}
-      <div className="flex flex-row justify-center items-center gap-4 mb-10">
+      <div className="w-full flex flex-row justify-center items-center gap-4 mb-10">
         <SpecialButton
           svg={
             <svg
@@ -105,17 +104,16 @@ export default function Hero() {
         >
           Resume
         </SpecialButton>
-        <SocialMediaButtons />
-      </div>
 
-      
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="w-full"
-      >
-      </motion.div>
+        <motion.span className="flex items-center gap-2 text-sm font-medium rounded-2xl py-2 px-4 bg-green-200 text-green-700 dark:text-gray-900 hover:text-gray-900 dark:hover:text-white transition">
+          <motion.div
+            className="w-3 h-3 rounded-full bg-green-500"
+            animate={{ opacity: [1, 0.4, 1], scale: [1, 0.8, 1] }}
+            transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+          />
+          Available for collaborations
+        </motion.span>
+      </div>
     </section>
   );
 }

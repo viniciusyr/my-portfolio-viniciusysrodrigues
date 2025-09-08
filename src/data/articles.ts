@@ -8,28 +8,29 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-  {
-    id: 1,
-    title: "Understanding Java Memory Management",
-    link: "https://medium.com/...",
-    description:
-      "A deep dive into how memory works in Java, covering heap, stack, and garbage collection.",
-    date: "Feb 2025",
-  },
-  {
-    id: 2,
-    title: "Building a SaaS with Spring Boot",
-    link: "https://dev.to/...",
-    description:
-      "Step-by-step guide on setting up a scalable SaaS architecture using Spring Boot and MySQL.",
-    date: "Jan 2025",
-  },
-  {
-    id: 3,
-    title: "Next.js + Framer Motion: A Smooth Portfolio",
-    link: "https://hashnode.com/...",
-    description:
-      "How to build an animated developer portfolio with Next.js and Framer Motion.",
-    date: "Dec 2024",
-  },
+{
+  id: 1,
+  title: "A Guide to Java Streams in Practice",
+  link: "https://www.baeldung.com/java-8-streams",
+  description:
+    "Comprehensive guide to Java Streams API, covering functional programming concepts, pipelines, filtering, mapping, reducing, collectors, parallel streams, and best practices for performance.",
+  date: "Updated 2025",
+},
+{
+  id: 2,
+  title: "Building Microservices with Spring Boot – A Practical Guide",
+  link: "https://www.baeldung.com/spring-boot-microservices",
+  description:
+    "Step-by-step guide to designing and implementing microservices using Spring Boot, including service discovery, API Gateway, inter-service communication, resilience, and observability.",
+  date: "Updated 2025",
+},
+{
+  id: 3,
+  title: "Patterns of Distributed Systems",
+  link: "https://martinfowler.com/articles/patterns-of-distributed-systems/",
+  description:
+    "Martin Fowler’s collection of core distributed systems patterns, including leader election, circuit breakers, service discovery, load balancing, and consistency models, explained with practical diagrams.",
+  date: "Ongoing (2025)",
+}
 ];
+
