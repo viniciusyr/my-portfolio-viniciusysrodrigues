@@ -7,7 +7,7 @@ export const experiences = [{
     start: "Jan, 2025",
     end: "Present",
     description: "Delivered a client landing page project, building the frontend with React, TailwindCSS, and Motion while integrating it with a Spring Boot REST API. Focused on clean architecture and backend reliability to ensure scalability and maintainability. Supported content management by connecting the system with WordPress APIs, providing a seamless user experience.",
-    link: "#",
+    link: "https://viniciusysrodrigues.com",
     logo: "/icons/companies/freelancer-logo.png"
 },
 {
@@ -38,6 +38,4 @@ export const experiences = [{
     description: "Monitored manufacturing processes and ensured product quality for customers. Supported the implementation of ISO 9001:2015 and employee training. Led internal improvements, including process automation using VBA, 5S continuous improvement, process mapping, risk/opportunity management, and process automation.",
     link: "https://isma.com.br/",
     logo: "/icons/companies/isma-logo.png"
-    
-
 }]
