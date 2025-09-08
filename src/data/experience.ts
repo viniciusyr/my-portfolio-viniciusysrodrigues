@@ -12,16 +12,25 @@ export const experiences = [{
 },
 {
     id: 2,
-    company: "ANOC99 Corporation",
-    title: "CSR Supervisor | Marketing Manager",
-    start: "Jan, 2023",
+    company: "First Orient International Ventures Corp.",
+    title: "Marketing Manager",
+    start: "Aug, 2023",
     end: "May, 2024",
-    description: "Developed the CSR and Marketing departments by implementing methodologies, scripts, and training programs for over 150 team members from Brazil, China, the Philippines, Indonesia, and Malaysia. Represented the company in negotiations, establishing partnerships with suppliers and marketing agencies to expand service reach and improve operational efficiency.",
-    link: "https://companieshouse.ph/anoc99-corporation",
-    logo: "/icons/companies/anoc99-logo.png"
+    description: "Responsible for handling digital marketing, creating new procedures using marketing tools, supporting multiple teams, conducting internal and external audits, and designing a performance-based bonus system for each employee. Managed paid traffic campaigns on social media platforms, including Facebook Ads and Google Ads, achieving excellent results. I trained and managed employees from diverse cultural backgrounds, including Filipinos, Indonesians, Malaysians, Chinese, and Brazilians. Under my leadership, the department grew from 30 to over 150 employees within a year.",
+    link: "https://ph.jobstreet.com/companies/first-orient-international-ventures-corp-168554764829192",
+    logo: "/icons/companies/foiv-logo.png"
 },
 {
     id: 3,
+    company: "ANOC99 Corporation",
+    title: "CSR Supervisor | Marketing Manager",
+    start: "Jan, 2023",
+    end: "Aug, 2023",
+    description: "Managed the CSR team, growing from just 5 to over 50 agents within a few months. Developed and delivered training for new employees. Created and implemented a KPI-based bonus system to incentivize and reward employee performance. Developed departmental methodologies, customer service scripts, and training for over 50 employees (Brazilians, Chinese, and Filipinos). Additionally, was responsible for ensuring compliance during external audits.",
+    logo: "/icons/companies/anoc99-logo.png"
+},
+{
+    id: 4,
     company: "ISMA Ltda - Estruturas de Armazenagem",
     title: "Senior Quality Control Inspector",
     start: "Jan, 2016",
