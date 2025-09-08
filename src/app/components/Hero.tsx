@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-6xl w-full font-light leading-snug text-gray-900 dark:text-gray-100 mb-10"
+          className="text-5xl w-full font-light leading-snug text-gray-900 dark:text-gray-100 mb-10"
         >
           Turning ideas into{" "}
           <span className="relative inline-block dark:text-black">

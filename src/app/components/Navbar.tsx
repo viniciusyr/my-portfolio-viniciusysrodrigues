@@ -73,7 +73,7 @@ export default function Navbar() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="text-[11px] text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition cursor-pointer"
+            className=" max-[430px]:hidden text-[11px] text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition cursor-pointer"
           >
             HOME
           </motion.span>
