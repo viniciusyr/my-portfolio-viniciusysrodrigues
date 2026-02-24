@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Vinicius Rodrigues | Portfolio",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased bg-white dark:bg-black transition-colors duration-500">
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
