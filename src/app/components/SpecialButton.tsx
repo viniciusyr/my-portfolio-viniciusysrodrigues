@@ -34,6 +34,7 @@ export default function SpecialButton({ children, svg }: SpecialButtonProps) {
         {children}
         {svg && <span>{svg}</span>}
       </a>
+      
     </motion.button>
   );
 }
