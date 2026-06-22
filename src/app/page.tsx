@@ -3,19 +3,23 @@ import Hero from "@/app/components/Hero";
 import Skills from "@/app/components/Skills";
 import SelectedWork from "@/app/components/SelectedWork";
 import Experience from "@/app/components/Experince";
+import Education from "@/app/components/Education";
+import Services from "@/app/components/Services";
+import Contact from "@/app/components/Contact";
 import Footer from "./components/Footer";
-import Articles from "./components/Articles";
 
 export default function Home() {
   return (
     <main className="min-h-[calc(100vh-96px)] flex flex-col mx-auto px-2 max-w-2xl">
-      <div className="h-screen w-full align-middle mx-auto">
+      <div className="min-h-screen w-full align-middle mx-auto">
         <Header />
         <Hero />
-        <Skills />
+        <Services />
         <SelectedWork />
+        <Skills />
         <Experience/>
-        <Articles />
+        <Education />
+        <Contact />
         <Footer />
       </div>
     </main>

@@ -9,6 +9,7 @@ import {
   SiGoogleanalytics,
   SiGoogletagmanager,
   SiSalesforce,
+  SiHubspot,
   SiClaude,
 } from "react-icons/si";
 
@@ -122,6 +123,12 @@ export default function GrowthStacks() {
         <motion.li className="group relative inline-block" variants={item}>
           <SiSalesforce className="w-6 h-6 fill-gray-500 hover:fill-sky-500 transition-colors duration-300 mt-0.5" />
           <span className={tooltip}>Salesforce</span>
+        </motion.li>
+
+        {/* HubSpot */}
+        <motion.li className="group relative inline-block" variants={item}>
+          <SiHubspot className="w-6 h-6 fill-gray-500 hover:fill-[#FF7A59] transition-colors duration-300 mt-0.5" />
+          <span className={tooltip}>HubSpot</span>
         </motion.li>
 
         {/* Applied AI: Claude */}

@@ -6,13 +6,12 @@ export const experiences = [
     start: "Jan, 2025",
     end: "Present",
     description:
-      "Independent engineer building the revenue systems agencies and SMBs need — a developer who also speaks marketing, owning each client build end to end across TypeScript, Java and cloud.",
+      "Independent engineer building revenue and automation systems for agencies and SMBs, a developer who also speaks marketing. Across multiple US-based clients, I own each build end to end.",
     highlights: [
-      "Built a custom ad-to-booking attribution platform for an 11-hotel group, rebuilding the site, SEO and conversion tracking; GA4-tracked revenue rose from a $1.9K baseline to a $13K peak.",
-      "Designed a GoHighLevel lead-automation system that unifies 12+ listing platforms into one pipeline with a tag-driven workflow state machine, so no lead is missed or over-messaged.",
-      "Lead developer on a production-grade SBA loan-automation platform: AI document intake and scoring behind a cryptographically-enforced human-approval gate.",
-      "Shipped a multi-tenant AI bookkeeping agent that codes 80%+ of transactions automatically against each client's own rules.",
-      "Replaced a paid PMS integration across 11 hotels with a custom Agoda-to-PMS sync, removing ~$1.1K/month in recurring cost.",
+      "Automate and consolidate operations for SMBs, replacing scattered SaaS tools with one clear workflow (Zapier, Salesforce, ClickUp), cutting recurring software cost and giving staff a single process to follow.",
+      "Build and customize WordPress / Elementor sites and integrations for international clients, wiring content, tracking and automation into their funnels.",
+      "Deliver deeper custom builds, including GoHighLevel lead automation, ad-to-booking attribution, and AI voice and back-office agents, each tied to a measurable business outcome (detailed in the work above).",
+      "Ship across the full stack (TypeScript, Java, cloud), from architecture to launch.",
     ],
     link: "https://viniciusysrodrigues.com",
     logo: "/icons/companies/freelancer-logo.png",
@@ -58,7 +57,7 @@ export const experiences = [
     start: "Jan, 2016",
     end: "Oct, 2022",
     description:
-      "Where the automation instinct started — manufacturing quality plus the process improvements that made the operation measurably better.",
+      "Where the automation instinct started, manufacturing quality plus the process improvements that made the operation measurably better.",
     highlights: [
       "Monitored manufacturing processes and ensured product quality for customers.",
       "Automated spreadsheets and recurring processes with VBA, cutting manual work and errors.",

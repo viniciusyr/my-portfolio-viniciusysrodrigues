@@ -41,8 +41,11 @@ export default function ProfileCard() {
         <motion.p className="text-gray-900 dark:text-gray-100 font-bold text-lg">
           Vinicius Rodrigues 🇧🇷
         </motion.p>
-        <motion.p className="text-gray-500 dark:text-gray-300 font-normal text-sm">
-          GoHighLevel &amp; AI Automation Specialist
+        <motion.p className="text-gray-700 dark:text-gray-200 font-medium text-sm">
+          Revenue Systems &amp; GTM Automation Engineer
+        </motion.p>
+        <motion.p className="text-gray-500 dark:text-gray-400 font-normal text-xs mt-0.5">
+          Backend, AI Workflows, GoHighLevel &amp; CRM Integrations
         </motion.p>
       </motion.div>
     </motion.div>

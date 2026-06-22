@@ -105,7 +105,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     workflows: [
       {
-        title: "New Rental Lead – 5-day follow-up:",
+        title: "New Rental Lead, 5-day follow-up:",
         detail: `validates the lead, then runs a 3-touch email sequence over 5 days if there's an email, creates call/text tasks for the leasing team if there's only a phone, and exits cleanly if there's neither.`,
       },
       {
@@ -225,7 +225,7 @@ export interface LabsEntry {
 }
 
 export const labsEntry: LabsEntry = {
-  title: "HiFit — SaaS for online personal trainers",
+  title: "HiFit, SaaS for online personal trainers",
   status: "Launching July 2026",
   image: "/projects/hifit-dashboard.png",
   description: `A SaaS platform where online personal trainers manage their students, build drag-and-drop workout programs (sets, supersets, protocols), automate check-ins and reminders, run client intake forms and fitness assessments, and collect payments, paired with a companion mobile app where students follow and log their training. Built as a TypeScript monorepo: a Next.js web dashboard and an Expo / React Native app sharing one Supabase backend, with AI-assisted workout generation on the near-term roadmap.`,

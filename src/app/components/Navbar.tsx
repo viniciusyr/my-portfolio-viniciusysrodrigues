@@ -104,6 +104,19 @@ export default function Navbar() {
             EXPERIENCE
           </motion.span>
         </Link>
+
+        <Link href="/#education">
+          <motion.span
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="max-[430px]:hidden text-[11px] text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition cursor-pointer"
+          >
+            EDUCATION
+          </motion.span>
+        </Link>
       </motion.div>
 
       {/* Socials */}

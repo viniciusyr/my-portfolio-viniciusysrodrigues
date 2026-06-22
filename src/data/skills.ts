@@ -16,7 +16,7 @@ export const skillGroups: SkillGroup[] = [
     id: 1,
     label: "Growth & Automation",
     caption:
-      "The systems that turn marketing into revenue — any GoHighLevel automation, built end to end.",
+      "The systems that turn marketing into revenue, any GoHighLevel automation, built end to end.",
     lead: true,
     skills: [
       { name: "GoHighLevel", featured: true },
@@ -24,7 +24,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Applied AI / GenAI" },
       { name: "Paid Traffic (Meta Ads, Google Ads)" },
       { name: "Analytics & Tracking (GTM, GA4)" },
-      { name: "CRM & CMS (Salesforce, WordPress)" },
+      { name: "CRM & CMS (HubSpot, Salesforce, WordPress)" },
     ],
   },
   {
