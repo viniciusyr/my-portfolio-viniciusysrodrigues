@@ -35,19 +35,18 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 1,
     eyebrow: "Attribution Platform · Click Hospitality Group",
-    headline: "Made an 11-hotel group's ad spend traceable to bookings",
+    headline: "Made a 12-hotel group's ad spend traceable to bookings",
     teaser:
       "Rebuilt the funnel and built custom attribution joining ad clicks to real bookings.",
     metricValue: "$1.9K → $13K",
     metricLabel: "tracked monthly revenue",
-    client: "Click Hospitality Group (~11 hotels, US)",
+    client: "Click Hospitality Group (12 hotels, US)",
     role: "Sole developer",
-    problem: `The group ran ads across 11 properties on Google and Meta but had no reliable way to see which sources actually produced bookings: ad data lived in Google and Meta, bookings in the PMS (BookingCenter), and web traffic in GA4, with no bridge between them. The site and tracking captured very little: in February, GA4 recorded just 4 purchases and $1.9K in revenue across the whole portfolio.`,
+    problem: `The group ran ads across 12 properties on Google and Meta but had no reliable way to see which sources actually produced bookings: ad data lived in Google and Meta, bookings in the PMS (BookingCenter), and web traffic in GA4, with no bridge between them. The site and tracking captured very little: in February, GA4 recorded just 4 purchases and $1.9K in revenue across the whole portfolio.`,
     built: [
       `Reconfigured Google Tag Manager and conversion tracking, and rebuilt the website and its SEO from the ground up.`,
       `Built a custom attribution platform: HMAC-signed short links inject a click ID into the booking flow, a nightly sync pulls completed bookings back from BookingCenter's API, and a matching engine joins each click session to its booking to produce per-hotel, per-platform ROAS.`,
       `Owner-scoped dashboards so each property owner sees only their own numbers, with ad credentials stored encrypted.`,
-      `Also built an AI customer-service system for the group that handles guest support entirely over the phone, answering all of their questions automatically.`,
     ],
     result: `After I rebuilt the site, SEO and conversion tracking (starting Feb 25), GA4-tracked purchase revenue rose from the $1.9K February baseline to $7.4K in March, then peaked at $13K in April (46 bookings), and has continued in the mid-four to low-five-figure range since (May $4.8K, understated, as the booking engine was down ~1.5 weeks and revenue went untracked during that window; June $4.7K through the 18th, on pace for ~$7.8K), with bookings now attributable to specific traffic sources for the first time.`,
     proof: `Backed by month-by-month GA4 screenshots, Feb–Jun 2026, and corroborated in the property's PMS.`,
@@ -59,6 +58,34 @@ export const caseStudies: CaseStudy[] = [
       "custom WordPress theme + tracking plugin",
       "Google Tag Manager",
       "technical SEO",
+    ],
+  },
+  {
+    id: 6,
+    eyebrow: "AI Voice Agent · Click Hospitality Group",
+    headline: "An AI phone agent answering guests across 12 hotels",
+    teaser:
+      "A real-time voice agent that takes guest calls, captures booking intent, logs complaints, and routes each one to the right hotel's front desk.",
+    metricValue: "12 hotels",
+    metricLabel: "live, AI-answered guest calls",
+    client: "Click Hospitality Group (12 hotels, US)",
+    role: "Sole developer",
+    problem: `Guest calls across the group's hotels tied up front-desk staff with repetitive questions, and there was no consistent way to capture booking interest or complaints, or to make sure each one reached the right property. Coverage depended on whoever happened to pick up the phone.`,
+    built: [
+      `A real-time inbound phone agent that talks to guests in natural speech: Twilio streams the call audio, Deepgram transcribes it live, OpenAI drives the conversation, and Cartesia speaks the reply back, with barge-in so guests can interrupt naturally.`,
+      `Answers the common questions (hours, check-in/out, amenities, directions) from a per-hotel knowledge base, so each property's agent speaks with its own name and details.`,
+      `Acts as front-of-funnel for bookings: it qualifies reservation intent and captures the lead instead of letting the call ring out.`,
+      `Records guest complaints and routes each one to the specific hotel's front desk, so issues reach the right property instead of getting lost.`,
+    ],
+    result: `Live and handling guest calls across all 12 hotels, giving the group 24/7 first-line phone coverage, consistent answers per property, captured booking intent, and a complaint trail that actually reaches the right front desk, without adding front-desk headcount.`,
+    stack: [
+      "Python / FastAPI",
+      "Pipecat (voice orchestration)",
+      "Twilio Media Streams (telephony)",
+      "Deepgram Nova-3 (streaming STT)",
+      "OpenAI (LLM)",
+      "Cartesia Sonic (streaming TTS)",
+      "Google Cloud Run + Docker",
     ],
   },
   {
@@ -166,18 +193,18 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 4,
     eyebrow: "Automation · Click Hospitality Group",
-    headline: "Replaced a paid PMS integration across 11 hotels",
+    headline: "Replaced a paid PMS integration across 12 hotels",
     teaser:
       "A custom Agoda-to-PMS sync, with a human queue for anything ambiguous.",
-    metricValue: "~$1.1K/mo",
+    metricValue: "~$1.2K/mo",
     metricLabel: "recurring cost removed",
-    client: "Click Hospitality Group (~11 hotels, US)",
+    client: "Click Hospitality Group (12 hotels, US)",
     role: "Sole developer",
-    problem: `The group's PMS (BookingCenter) charges $100+ per hotel for its native Agoda integration, a recurring cost across 11 properties. Without it, front-desk staff manually transcribed every Agoda booking and cancellation email into the PMS, one by one.`,
+    problem: `The group's PMS (BookingCenter) charges $100+ per hotel for its native Agoda integration, a recurring cost across 12 properties. Without it, front-desk staff manually transcribed every Agoda booking and cancellation email into the PMS, one by one.`,
     built: [
       `A system that monitors each hotel's inbox for Agoda booking emails and automatically creates or cancels the reservation in the PMS via its API, with fingerprint-based idempotency so retries never double-book. Anything ambiguous or risky is routed to a human review queue rather than processed blindly. Day to day it runs itself. Front desk only needs to keep an eye on it during high-occupancy periods, and the app proactively alerts them when that matters.`,
     ],
-    result: `Replaced a recurring $100+/hotel/month PMS feature subscription across all 11 properties (roughly $1,100+/month eliminated) while removing the manual data entry entirely and keeping a human in control of every edge case.`,
+    result: `Replaced a recurring $100+/hotel/month PMS feature subscription across all 12 properties (roughly $1,200+/month eliminated) while removing the manual data entry entirely and keeping a human in control of every edge case.`,
     stack: [
       "Node.js/TypeScript",
       "Gmail API + Pub/Sub ingestion",
@@ -194,11 +221,13 @@ export interface LabsEntry {
   status: string;
   description: string;
   stack: string[];
+  image?: string;
 }
 
 export const labsEntry: LabsEntry = {
   title: "HiFit — SaaS for online personal trainers",
   status: "Launching July 2026",
+  image: "/projects/hifit-dashboard.png",
   description: `A SaaS platform where online personal trainers manage their students, build drag-and-drop workout programs (sets, supersets, protocols), automate check-ins and reminders, run client intake forms and fitness assessments, and collect payments, paired with a companion mobile app where students follow and log their training. Built as a TypeScript monorepo: a Next.js web dashboard and an Expo / React Native app sharing one Supabase backend, with AI-assisted workout generation on the near-term roadmap.`,
   stack: [
     "Next.js 15 / React 19",

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { caseStudies, labsEntry, CaseStudy } from "@/data/caseStudies";
 import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
@@ -228,6 +229,20 @@ export default function SelectedWork() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, amount: 0.15 }}
           >
+            {labsEntry.image && (
+              <div className="mb-5 rounded-xl bg-gradient-to-br from-[#009ffb]/25 via-violet-500/20 to-fuchsia-500/25 p-3 sm:p-5">
+                <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/10 shadow-xl shadow-[#009ffb]/20">
+                  <Image
+                    src={labsEntry.image}
+                    alt={`${labsEntry.title} dashboard`}
+                    fill
+                    sizes="(max-width: 672px) 100vw, 640px"
+                    className="object-cover object-top"
+                  />
+                </div>
+              </div>
+            )}
+
             <div className="flex items-center justify-between gap-2">
               <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
                 {labsEntry.title}

@@ -8,6 +8,7 @@ interface Experiences {
   start: string;
   end: string;
   description: string;
+  highlights?: string[];
   link?: string;
   logo: string;
 }
@@ -83,8 +84,8 @@ const ExperienceCard = ({ experience }: { experience: Experiences }) => {
         </div>
       </motion.div>
 
-      <motion.p
-        className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed ml-16"
+      <motion.div
+        className="ml-16"
         variants={{
           hidden: { opacity: 0, y: 20 },
           visible: {
@@ -94,8 +95,24 @@ const ExperienceCard = ({ experience }: { experience: Experiences }) => {
           },
         }}
       >
-        {experience.description}
-      </motion.p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+          {experience.description}
+        </p>
+
+        {experience.highlights && experience.highlights.length > 0 && (
+          <ul className="mt-2.5 space-y-1.5">
+            {experience.highlights.map((point, i) => (
+              <li
+                key={i}
+                className="flex gap-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400"
+              >
+                <span className="mt-px select-none text-[#009ffb]">›</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </motion.div>
     </motion.div>
   );
 };
