@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import AnimatedSpan from "./AnimatedSpan";
 import SpecialButton from "./SpecialButton";
-import Stacks from "@/app/components/Stacks";
 import ProfileCard from "./ProfileCard";
 
 export default function Hero() {
@@ -21,7 +20,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="text-5xl w-full font-light leading-snug text-gray-900 dark:text-gray-100 mb-10"
         >
-          Turning ideas into{" "}
+          I build the systems that turn{" "}
           <span className="relative inline-block dark:text-black">
             <RoughNotation
               type="highlight"
@@ -29,10 +28,10 @@ export default function Hero() {
               animationDuration={1200}
               strokeWidth={1}
             >
-              <span>code</span>
+              <span>marketing</span>
             </RoughNotation>
-          </span>
-          , and code into{" "}
+          </span>{" "}
+          into{" "}
           <span className="relative inline-block">
             <RoughNotation
               type="box"
@@ -40,10 +39,10 @@ export default function Hero() {
               animationDuration={1200}
               strokeWidth={3}
             >
-              <span>experiences</span>
+              <span>revenue</span>
             </RoughNotation>
           </span>{" "}
-          — where creativity meets{" "}
+          for agencies &amp;{" "}
           <span className="relative inline-block">
             <RoughNotation
               type="underline"
@@ -51,7 +50,7 @@ export default function Hero() {
               animationDuration={800}
               strokeWidth={3}
             >
-              <span className="font-bold">technology.</span>
+              <span className="font-bold">SMBs.</span>
             </RoughNotation>
           </span>
         </motion.h1>
@@ -60,7 +59,6 @@ export default function Hero() {
       {/*  Profile Card  */}
       <div className="w-full flex flex-col justify-center mb-8">
         <ProfileCard />
-        <Stacks />
       </div>
 
       {/*  Short Bio  */}
@@ -70,16 +68,21 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
         className="text-md font-light leading-7 text-gray-700 dark:text-gray-100 text-justify mb-8"
       >
-        I’m a <AnimatedSpan>Backend Developer</AnimatedSpan> specialized in{" "}
-        <AnimatedSpan>Java</AnimatedSpan> and{" "}
-        <AnimatedSpan>Spring Boot</AnimatedSpan>, focused on building scalable
-        and maintainable applications. While my main expertise is in{" "}
-        <AnimatedSpan>Backend</AnimatedSpan> development — designing APIs, database modeling, and cloud deployments —
-        I also bring experience with <AnimatedSpan>TypeScript</AnimatedSpan> and <AnimatedSpan>Next.js</AnimatedSpan>, which allows me to contribute
-        effectively to <AnimatedSpan>Frontend</AnimatedSpan> projects when
-        needed. Passionate about transforming ideas into real solutions, I
-        combine technical expertise and problem-solving skills to deliver
-        applications that bring real value.
+        I’m a software engineer who builds the{" "}
+        <AnimatedSpan>revenue systems</AnimatedSpan> that small businesses and
+        marketing agencies need, but rarely find in one person. I combine real{" "}
+        <AnimatedSpan>full-stack development</AnimatedSpan> (
+        <AnimatedSpan>Java</AnimatedSpan>,{" "}
+        <AnimatedSpan>TypeScript</AnimatedSpan>,{" "}
+        <AnimatedSpan>cloud</AnimatedSpan>) with hands-on{" "}
+        <AnimatedSpan>marketing and paid-traffic</AnimatedSpan> experience, so I
+        can build a custom <AnimatedSpan>CRM automation</AnimatedSpan>, wire up
+        the tracking, plug <AnimatedSpan>AI</AnimatedSpan> into the funnel, and
+        tie it all to a business outcome. I’ve scaled marketing departments from
+        a handful of people to over a hundred, run Meta and Google Ads campaigns
+        with measurable results, and shipped web and automation systems for
+        international clients. I don’t just write code. I build things that{" "}
+        <AnimatedSpan>move the number the client cares about</AnimatedSpan>.
       </motion.p>
 
       {/*  Actions  */}

@@ -1,15 +1,16 @@
-# 🌐 Portfolio — Vinicius Rodrigues  
+# 🌐 Portfolio | Vinicius Rodrigues  
 
-Welcome to my personal portfolio!  
-This project showcases my journey as a developer, my technical skills, and some of the projects I’ve built.  
+Personal portfolio of an **AI & Automation Engineer** who builds the systems that turn marketing into revenue for agencies and SMBs.  
+It showcases real case studies (CRM automation, attribution, AI agents, GoHighLevel, and paid-traffic systems) backed by full-stack engineering.  
 
 🔗 **Live Website:** [www.viniciusysrodrigues.com](https://www.viniciusysrodrigues.com)  
 
 ---
 
 ## ✨ Features
-- **Stacks** and technologies I use.  
-- **Highlighted projects** focused on Backend and Full Stack development.  
+- **Case studies** tied to business outcomes (revenue, automation, cost savings).  
+- **Skills** led by growth & automation, with full-stack engineering as deep technical support.  
+- **Technical projects** that sharpen the engineering craft behind the systems.  
 - **Dynamic Resume link** (changes depending on user location).  
 - **Responsive design**, mobile-first.  
 - Smooth animations using **Framer Motion** and **GSAP**.  

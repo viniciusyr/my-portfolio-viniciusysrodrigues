@@ -1,6 +1,7 @@
 import Header from "@/app/components/Header";
 import Hero from "@/app/components/Hero";
-import Projects from "@/app/components/Projects";
+import Skills from "@/app/components/Skills";
+import SelectedWork from "@/app/components/SelectedWork";
 import Experience from "@/app/components/Experince";
 import Footer from "./components/Footer";
 import Articles from "./components/Articles";
@@ -11,7 +12,8 @@ export default function Home() {
       <div className="h-screen w-full align-middle mx-auto">
         <Header />
         <Hero />
-        <Projects />
+        <Skills />
+        <SelectedWork />
         <Experience/>
         <Articles />
         <Footer />

@@ -3,8 +3,9 @@ import "./globals.css";
 import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
-  title: "Vinicius Rodrigues | Portfolio",
-  description: "Software Engineer | Backend Developer especialized in Java and Spring Boot",
+  title: "Vinicius Rodrigues | GoHighLevel & AI Automation Specialist",
+  description:
+    "GoHighLevel & AI Automation specialist (and full-stack developer). I build the systems that turn marketing into revenue for agencies & SMBs: GoHighLevel automation, CRM, attribution, AI agents, and paid-traffic infrastructure.",
 };
 
 export default function RootLayout({

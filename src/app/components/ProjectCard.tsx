@@ -30,14 +30,14 @@ export default function ProjectCard({ project }: { project: ProjectType }) {
   return (
     <>
       <motion.div
-        className="rounded-xl shadow-lg shadow-[#009ffb]/20 border border-[#009ffb]/30 bg-white dark:bg-black p-5 flex flex-col justify-between"
+        className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-neutral-900 p-5 shadow-sm flex flex-col justify-between transition-colors duration-300 hover:border-[#009ffb]/40"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.2 }}
         whileHover={{
-          y: -6,
-          boxShadow: "0px 6px 12px rgba(0, 159, 251, 0.4)",
+          y: -4,
+          boxShadow: "0px 14px 44px -16px rgba(0, 159, 251, 0.35)",
         }}
       >
         <div>
@@ -56,7 +56,7 @@ export default function ProjectCard({ project }: { project: ProjectType }) {
             {project.tech.map((item, index) => (
               <span
                 key={index}
-                className="text-[11px] px-2 py-1 rounded-md text-gray-700 dark:text-gray-300 border border-[#009ffb] hover:bg-[#4d9292]/20 transition"
+                className="text-[11px] px-2.5 py-1 rounded-full bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-300"
               >
                 {item}
               </span>

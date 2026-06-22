@@ -1,24 +1,22 @@
-import { text } from "stream/consumers";
-
 export const AboutVariants = [
   {
     id: 1,
-    text: `Since childhood, I’ve been curious about what happens behind the screen. At 12, that curiosity became a passion when I created my own private Lineage 2 server. To make it work, I taught myself <AnimatedSpan>MySQL</AnimatedSpan> and <AnimatedSpan> System Configurations </AnimatedSpan> — and realized programming wasn’t just fun, but also a powerful way to build digital worlds.`,
+    text: `Since childhood, I’ve been curious about what happens behind the screen. At 12, that curiosity became a passion when I created my own private Lineage 2 server. To make it work, I taught myself <AnimatedSpan>MySQL</AnimatedSpan> and <AnimatedSpan>System Configurations</AnimatedSpan>, and realized I loved building systems, not just using them.`,
   },
   {
     id: 2,
-    text: `Today, I’m a Software Engineer specializing in Java and JavaScript, with a knack for both frontend and backend development. I love crafting seamless user experiences and robust server-side logic. My journey has taken me through diverse projects, from developing e-commerce platforms to building real-time applications.`,
+    text: `Today, I’m a software engineer who builds the <AnimatedSpan>revenue systems</AnimatedSpan> that small businesses and marketing agencies need, but rarely find in one person. I combine real <AnimatedSpan>full-stack development</AnimatedSpan> with hands-on <AnimatedSpan>marketing</AnimatedSpan> and <AnimatedSpan>paid-traffic</AnimatedSpan> experience.`,
   },
   {
     id: 3,
-    text: `Later, my career path shifted, and I worked as a senior quality inspector. But programming never left my life. On the contrary — I developed VBA tools that automated spreadsheets and processes, improving efficiency for my team. This experience proved to me that my passion for technology could bring value in any field.`,
+    text: `Along the way I ran marketing departments: scaling teams, running Meta and Google Ads with measurable results, and designing the processes and bonus systems that made them perform. That’s where I learned to speak the language of <AnimatedSpan>business outcomes</AnimatedSpan>, not just code.`,
   },
   {
     id: 4,
-    text: `Today, I’m back to focusing fully on programming. I’m deepening my knowledge in Java, MySQL, and frameworks like Spring Boot, while also exploring cloud technologies such as AWS and Google Cloud. My personal projects — from an animated portfolio built with Framer Motion to developing SaaS solutions — reflect not only technical skills but also creativity and vision.`,
+    text: `I’ve shipped custom <AnimatedSpan>CRM automations</AnimatedSpan>, attribution platforms, AI agents, and <AnimatedSpan>GoHighLevel</AnimatedSpan> systems for international clients: wiring up tracking, plugging AI into the funnel, and tying it all to the number the client cares about. I work across <AnimatedSpan>TypeScript</AnimatedSpan>, <AnimatedSpan>Java</AnimatedSpan>, and <AnimatedSpan>cloud</AnimatedSpan> platforms like AWS and Google Cloud.`,
   },
-    {
+  {
     id: 5,
-    text: `For me, programming is more than a career. It’s my most authentic way of transforming ideas into digital reality — a passion I’ve carried since childhood and continue to grow every day.`,
+    text: `For me, technology has always been about turning ideas into systems that move real numbers, a throughline I’ve carried since that first server as a kid, and one I keep building on every day.`,
   },
 ];

@@ -79,7 +79,7 @@ export default function Navbar() {
           </motion.span>
         </Link>
 
-        <Link href="/#projects">
+        <Link href="/#work">
           <motion.span
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.9 }}
             className="text-[11px] text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium transition cursor-pointer"
           >
-            PROJECTS
+            WORK
           </motion.span>
         </Link>
 
